@@ -32,7 +32,7 @@ def lambda_handler(event, context):
     if alerts:
         return {
             "statusCode": 403,
-            "message": "Threats detected",
+            "message": "🚨 Threats detected by GitHub CI/CD!",
             "alerts": alerts
         }
 
